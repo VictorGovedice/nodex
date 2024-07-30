@@ -12,7 +12,7 @@ const database = new DatabasePostgres()
 // Rote
 
 server.get('/', (req, res) => {
-    res.send('Ṕroject with Nodejs, fastify, postgrees 🏆 胜利者 Vctr 🧸')
+    res.send('Project with Nodejs, fastify, postgrees 🏆 胜利者 Vctr 🧸')
 })
 
 server.post('/videos', async (request, reply) => {
