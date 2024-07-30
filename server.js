@@ -9,6 +9,12 @@ const server = fastify()
 //const database = new DatabaseMemory()
 const database = new DatabasePostgres()
 
+// Rote
+
+server.get('/', (req, res) => {
+    res.send('🏆 胜利者 Vctr 🧸')
+})
+
 server.post('/videos', async (request, reply) => {
 
     const {title, description, duration} = request.body
