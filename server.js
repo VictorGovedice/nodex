@@ -24,7 +24,7 @@ server.post('/videos', async (request, reply) => {
         description,
         duration
     })
-    return reply.status(201).send()
+    return reply.status(201).send('registered user')
 })
 
 server.get('/videos', async (request, reply) => {
